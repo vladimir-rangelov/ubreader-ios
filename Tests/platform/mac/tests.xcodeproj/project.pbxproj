@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3109A911AAF372A0007C95E /* import_new_books.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3109A901AAF372A0007C95E /* import_new_books.cpp */; };
+		A315E0F21AEA747D005424E7 /* exclusive_db_connection_for_writing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A315E0F11AEA747D005424E7 /* exclusive_db_connection_for_writing.cpp */; };
+		A39CE4651A9F4B1500E9A9BA /* gtest_main.cc in Sources */ = {isa = PBXBuildFile; fileRef = A39CE4641A9F4B1500E9A9BA /* gtest_main.cc */; };
+		A39CE4671A9F4B1B00E9A9BA /* gtest-all.cc in Sources */ = {isa = PBXBuildFile; fileRef = A39CE4661A9F4B1B00E9A9BA /* gtest-all.cc */; };
+		A39CE4B61A9F57F600E9A9BA /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = A39CE4B21A9F57F600E9A9BA /* sqlite3.c */; };
+		A39CE4C61AA0525400E9A9BA /* base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A39CE4BE1AA0525400E9A9BA /* base.cpp */; };
+		A39CE4C71AA0525400E9A9BA /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A39CE4C41AA0525400E9A9BA /* utils.cpp */; };
+		A39CE4CE1AA0919300E9A9BA /* book_attributes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A39CE4CD1AA0919300E9A9BA /* book_attributes.cpp */; };
+		A3C802FB1AAF32FF001222A9 /* import_new_books.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3C802F91AAF32FF001222A9 /* import_new_books.cpp */; };
+		A3DA01601AA7517A00F2F354 /* database_management.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3DA015F1AA7517A00F2F354 /* database_management.cpp */; };
+		A3E72FB01AF7793A00F69A2C /* backend-loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72F9D1AF7793A00F69A2C /* backend-loader.cpp */; };
+		A3E72FB11AF7793A00F69A2C /* blob.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72F9E1AF7793A00F69A2C /* blob.cpp */; };
+		A3E72FB21AF7793A00F69A2C /* connection-parameters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72F9F1AF7793A00F69A2C /* connection-parameters.cpp */; };
+		A3E72FB31AF7793A00F69A2C /* connection-pool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72FA01AF7793A00F69A2C /* connection-pool.cpp */; };
+		A3E72FB41AF7793A00F69A2C /* error.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72FA11AF7793A00F69A2C /* error.cpp */; };
+		A3E72FB51AF7793A00F69A2C /* into-type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72FA21AF7793A00F69A2C /* into-type.cpp */; };
+		A3E72FB61AF7793A00F69A2C /* once-temp-type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72FA31AF7793A00F69A2C /* once-temp-type.cpp */; };
+		A3E72FB71AF7793A00F69A2C /* prepare-temp-type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72FA41AF7793A00F69A2C /* prepare-temp-type.cpp */; };
+		A3E72FB81AF7793A00F69A2C /* procedure.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72FA51AF7793A00F69A2C /* procedure.cpp */; };
+		A3E72FB91AF7793A00F69A2C /* ref-counted-prepare-info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72FA61AF7793A00F69A2C /* ref-counted-prepare-info.cpp */; };
+		A3E72FBA1AF7793A00F69A2C /* ref-counted-statement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72FA71AF7793A00F69A2C /* ref-counted-statement.cpp */; };
+		A3E72FBB1AF7793A00F69A2C /* row.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72FA81AF7793A00F69A2C /* row.cpp */; };
+		A3E72FBC1AF7793A00F69A2C /* rowid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72FA91AF7793A00F69A2C /* rowid.cpp */; };
+		A3E72FBD1AF7793A00F69A2C /* session.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72FAA1AF7793A00F69A2C /* session.cpp */; };
+		A3E72FBE1AF7793A00F69A2C /* soci-simple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72FAB1AF7793A00F69A2C /* soci-simple.cpp */; };
+		A3E72FBF1AF7793A00F69A2C /* statement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72FAC1AF7793A00F69A2C /* statement.cpp */; };
+		A3E72FC01AF7793A00F69A2C /* transaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72FAD1AF7793A00F69A2C /* transaction.cpp */; };
+		A3E72FC11AF7793A00F69A2C /* use-type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72FAE1AF7793A00F69A2C /* use-type.cpp */; };
+		A3E72FC21AF7793A00F69A2C /* values.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72FAF1AF7793A00F69A2C /* values.cpp */; };
+		A3E72FCD1AF7795100F69A2C /* blob.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72FC31AF7795100F69A2C /* blob.cpp */; };
+		A3E72FCE1AF7795100F69A2C /* common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72FC41AF7795100F69A2C /* common.cpp */; };
+		A3E72FCF1AF7795100F69A2C /* factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72FC51AF7795100F69A2C /* factory.cpp */; };
+		A3E72FD01AF7795100F69A2C /* row-id.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72FC61AF7795100F69A2C /* row-id.cpp */; };
+		A3E72FD11AF7795100F69A2C /* session.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72FC71AF7795100F69A2C /* session.cpp */; };
+		A3E72FD21AF7795100F69A2C /* standard-into-type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72FC81AF7795100F69A2C /* standard-into-type.cpp */; };
+		A3E72FD31AF7795100F69A2C /* standard-use-type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72FC91AF7795100F69A2C /* standard-use-type.cpp */; };
+		A3E72FD41AF7795100F69A2C /* statement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72FCA1AF7795100F69A2C /* statement.cpp */; };
+		A3E72FD51AF7795100F69A2C /* vector-into-type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72FCB1AF7795100F69A2C /* vector-into-type.cpp */; };
+		A3E72FD61AF7795100F69A2C /* vector-use-type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72FCC1AF7795100F69A2C /* vector-use-type.cpp */; };
+		A3E72FD81AF77CAC00F69A2C /* book_on_shelf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3E72FD71AF77CAC00F69A2C /* book_on_shelf.cpp */; };
+		C905F1AC1AA704ED007EF2FD /* book_shelf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C905F1AB1AA704ED007EF2FD /* book_shelf.cpp */; };
+		C905F1AF1AA72AAA007EF2FD /* book_list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C905F1AE1AA72AAA007EF2FD /* book_list.cpp */; };
+		C98BE41F1A9F68DE001D0638 /* date_generators.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C98BE4181A9F68DE001D0638 /* date_generators.cpp */; };
+		C98BE4201A9F68DE001D0638 /* greg_month.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C98BE4191A9F68DE001D0638 /* greg_month.cpp */; };
+		C98BE4211A9F68DE001D0638 /* greg_weekday.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C98BE41B1A9F68DE001D0638 /* greg_weekday.cpp */; };
+		C98BE4221A9F68DE001D0638 /* gregorian_types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C98BE41C1A9F68DE001D0638 /* gregorian_types.cpp */; };
+		C98BE4231A9F68DE001D0638 /* posix_time_types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C98BE41E1A9F68DE001D0638 /* posix_time_types.cpp */; };
+		C98BE4271A9F6A2C001D0638 /* book.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C98BE4251A9F6A2C001D0638 /* book.cpp */; };
+		C98BE4281A9F6A2C001D0638 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C98BE4261A9F6A2C001D0638 /* utils.cpp */; };
+		C98BE42C1A9F706F001D0638 /* soci_session_factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C98BE42B1A9F706F001D0638 /* soci_session_factory.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C9628CE61A8A057F00282337 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A3109A901AAF372A0007C95E /* import_new_books.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = import_new_books.cpp; sourceTree = "<group>"; };
+		A3109A921AAF400F0007C95E /* book_cover_attribute.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = book_cover_attribute.hpp; sourceTree = "<group>"; };
+		A315E0F11AEA747D005424E7 /* exclusive_db_connection_for_writing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = exclusive_db_connection_for_writing.cpp; sourceTree = "<group>"; };
+		A39CE4641A9F4B1500E9A9BA /* gtest_main.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gtest_main.cc; sourceTree = "<group>"; };
+		A39CE4661A9F4B1B00E9A9BA /* gtest-all.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "gtest-all.cc"; path = "../../../../../third_parties/gtest-1.7.0/src/gtest-all.cc"; sourceTree = "<group>"; };
+		A39CE4B21A9F57F600E9A9BA /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
+		A39CE4B31A9F57F600E9A9BA /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+		A39CE4B41A9F57F600E9A9BA /* sqlite3ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3ext.h; sourceTree = "<group>"; };
+		A39CE4B81AA0525400E9A9BA /* book.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = book.hpp; sourceTree = "<group>"; };
+		A39CE4B91AA0525400E9A9BA /* db_id.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = db_id.hpp; sourceTree = "<group>"; };
+		A39CE4BC1AA0525400E9A9BA /* processor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = processor.hpp; sourceTree = "<group>"; };
+		A39CE4BE1AA0525400E9A9BA /* base.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = base.cpp; sourceTree = "<group>"; };
+		A39CE4BF1AA0525400E9A9BA /* base.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = base.hpp; sourceTree = "<group>"; };
+		A39CE4C01AA0525400E9A9BA /* book.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = book.hpp; sourceTree = "<group>"; };
+		A39CE4C11AA0525400E9A9BA /* id.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = id.hpp; sourceTree = "<group>"; };
+		A39CE4C41AA0525400E9A9BA /* utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utils.cpp; sourceTree = "<group>"; };
+		A39CE4C51AA0525400E9A9BA /* utils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = utils.hpp; sourceTree = "<group>"; };
+		A39CE4C91AA06C0600E9A9BA /* sql_tables.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = sql_tables.txt; sourceTree = "<group>"; };
+		A39CE4CA1AA06C0600E9A9BA /* UBReader_iOS_Version_1_spec.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = UBReader_iOS_Version_1_spec.rtf; sourceTree = "<group>"; };
+		A39CE4CC1AA07AC900E9A9BA /* book_attributes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = book_attributes.hpp; sourceTree = "<group>"; };
+		A39CE4CD1AA0919300E9A9BA /* book_attributes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = book_attributes.cpp; sourceTree = "<group>"; };
+		A3C802F91AAF32FF001222A9 /* import_new_books.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = import_new_books.cpp; sourceTree = "<group>"; };
+		A3C802FA1AAF32FF001222A9 /* import_new_books.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = import_new_books.hpp; sourceTree = "<group>"; };
+		A3DA015F1AA7517A00F2F354 /* database_management.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = database_management.cpp; sourceTree = "<group>"; };
+		A3DA01611AA7617100F2F354 /* drop_tables.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = drop_tables.txt; sourceTree = "<group>"; };
+		A3E72F9D1AF7793A00F69A2C /* backend-loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "backend-loader.cpp"; path = "../../../third_parties/soci-3.2.2/core/backend-loader.cpp"; sourceTree = "<group>"; };
+		A3E72F9E1AF7793A00F69A2C /* blob.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = blob.cpp; path = "../../../third_parties/soci-3.2.2/core/blob.cpp"; sourceTree = "<group>"; };
+		A3E72F9F1AF7793A00F69A2C /* connection-parameters.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "connection-parameters.cpp"; path = "../../../third_parties/soci-3.2.2/core/connection-parameters.cpp"; sourceTree = "<group>"; };
+		A3E72FA01AF7793A00F69A2C /* connection-pool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "connection-pool.cpp"; path = "../../../third_parties/soci-3.2.2/core/connection-pool.cpp"; sourceTree = "<group>"; };
+		A3E72FA11AF7793A00F69A2C /* error.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = error.cpp; path = "../../../third_parties/soci-3.2.2/core/error.cpp"; sourceTree = "<group>"; };
+		A3E72FA21AF7793A00F69A2C /* into-type.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "into-type.cpp"; path = "../../../third_parties/soci-3.2.2/core/into-type.cpp"; sourceTree = "<group>"; };
+		A3E72FA31AF7793A00F69A2C /* once-temp-type.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "once-temp-type.cpp"; path = "../../../third_parties/soci-3.2.2/core/once-temp-type.cpp"; sourceTree = "<group>"; };
+		A3E72FA41AF7793A00F69A2C /* prepare-temp-type.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "prepare-temp-type.cpp"; path = "../../../third_parties/soci-3.2.2/core/prepare-temp-type.cpp"; sourceTree = "<group>"; };
+		A3E72FA51AF7793A00F69A2C /* procedure.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = procedure.cpp; path = "../../../third_parties/soci-3.2.2/core/procedure.cpp"; sourceTree = "<group>"; };
+		A3E72FA61AF7793A00F69A2C /* ref-counted-prepare-info.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "ref-counted-prepare-info.cpp"; path = "../../../third_parties/soci-3.2.2/core/ref-counted-prepare-info.cpp"; sourceTree = "<group>"; };
+		A3E72FA71AF7793A00F69A2C /* ref-counted-statement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "ref-counted-statement.cpp"; path = "../../../third_parties/soci-3.2.2/core/ref-counted-statement.cpp"; sourceTree = "<group>"; };
+		A3E72FA81AF7793A00F69A2C /* row.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = row.cpp; path = "../../../third_parties/soci-3.2.2/core/row.cpp"; sourceTree = "<group>"; };
+		A3E72FA91AF7793A00F69A2C /* rowid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rowid.cpp; path = "../../../third_parties/soci-3.2.2/core/rowid.cpp"; sourceTree = "<group>"; };
+		A3E72FAA1AF7793A00F69A2C /* session.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = session.cpp; path = "../../../third_parties/soci-3.2.2/core/session.cpp"; sourceTree = "<group>"; };
+		A3E72FAB1AF7793A00F69A2C /* soci-simple.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "soci-simple.cpp"; path = "../../../third_parties/soci-3.2.2/core/soci-simple.cpp"; sourceTree = "<group>"; };
+		A3E72FAC1AF7793A00F69A2C /* statement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = statement.cpp; path = "../../../third_parties/soci-3.2.2/core/statement.cpp"; sourceTree = "<group>"; };
+		A3E72FAD1AF7793A00F69A2C /* transaction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = transaction.cpp; path = "../../../third_parties/soci-3.2.2/core/transaction.cpp"; sourceTree = "<group>"; };
+		A3E72FAE1AF7793A00F69A2C /* use-type.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "use-type.cpp"; path = "../../../third_parties/soci-3.2.2/core/use-type.cpp"; sourceTree = "<group>"; };
+		A3E72FAF1AF7793A00F69A2C /* values.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = values.cpp; path = "../../../third_parties/soci-3.2.2/core/values.cpp"; sourceTree = "<group>"; };
+		A3E72FC31AF7795100F69A2C /* blob.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = blob.cpp; path = "../../../third_parties/soci-3.2.2/backends/sqlite3/blob.cpp"; sourceTree = "<group>"; };
+		A3E72FC41AF7795100F69A2C /* common.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = common.cpp; path = "../../../third_parties/soci-3.2.2/backends/sqlite3/common.cpp"; sourceTree = "<group>"; };
+		A3E72FC51AF7795100F69A2C /* factory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = factory.cpp; path = "../../../third_parties/soci-3.2.2/backends/sqlite3/factory.cpp"; sourceTree = "<group>"; };
+		A3E72FC61AF7795100F69A2C /* row-id.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "row-id.cpp"; path = "../../../third_parties/soci-3.2.2/backends/sqlite3/row-id.cpp"; sourceTree = "<group>"; };
+		A3E72FC71AF7795100F69A2C /* session.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = session.cpp; path = "../../../third_parties/soci-3.2.2/backends/sqlite3/session.cpp"; sourceTree = "<group>"; };
+		A3E72FC81AF7795100F69A2C /* standard-into-type.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "standard-into-type.cpp"; path = "../../../third_parties/soci-3.2.2/backends/sqlite3/standard-into-type.cpp"; sourceTree = "<group>"; };
+		A3E72FC91AF7795100F69A2C /* standard-use-type.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "standard-use-type.cpp"; path = "../../../third_parties/soci-3.2.2/backends/sqlite3/standard-use-type.cpp"; sourceTree = "<group>"; };
+		A3E72FCA1AF7795100F69A2C /* statement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = statement.cpp; path = "../../../third_parties/soci-3.2.2/backends/sqlite3/statement.cpp"; sourceTree = "<group>"; };
+		A3E72FCB1AF7795100F69A2C /* vector-into-type.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "vector-into-type.cpp"; path = "../../../third_parties/soci-3.2.2/backends/sqlite3/vector-into-type.cpp"; sourceTree = "<group>"; };
+		A3E72FCC1AF7795100F69A2C /* vector-use-type.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "vector-use-type.cpp"; path = "../../../third_parties/soci-3.2.2/backends/sqlite3/vector-use-type.cpp"; sourceTree = "<group>"; };
+		A3E72FD71AF77CAC00F69A2C /* book_on_shelf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = book_on_shelf.cpp; sourceTree = "<group>"; };
+		C905F1A81AA70146007EF2FD /* book_attributes.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = book_attributes.hpp; sourceTree = "<group>"; };
+		C905F1A91AA70157007EF2FD /* book_shelf.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = book_shelf.hpp; sourceTree = "<group>"; };
+		C905F1AA1AA7026B007EF2FD /* book_shelf.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = book_shelf.hpp; sourceTree = "<group>"; };
+		C905F1AB1AA704ED007EF2FD /* book_shelf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = book_shelf.cpp; sourceTree = "<group>"; };
+		C905F1AE1AA72AAA007EF2FD /* book_list.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = book_list.cpp; sourceTree = "<group>"; };
+		C9628CE81A8A057F00282337 /* tests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tests; sourceTree = BUILT_PRODUCTS_DIR; };
+		C98BE4181A9F68DE001D0638 /* date_generators.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = date_generators.cpp; sourceTree = "<group>"; };
+		C98BE4191A9F68DE001D0638 /* greg_month.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = greg_month.cpp; sourceTree = "<group>"; };
+		C98BE41A1A9F68DE001D0638 /* greg_names.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = greg_names.hpp; sourceTree = "<group>"; };
+		C98BE41B1A9F68DE001D0638 /* greg_weekday.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = greg_weekday.cpp; sourceTree = "<group>"; };
+		C98BE41C1A9F68DE001D0638 /* gregorian_types.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gregorian_types.cpp; sourceTree = "<group>"; };
+		C98BE41E1A9F68DE001D0638 /* posix_time_types.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = posix_time_types.cpp; sourceTree = "<group>"; };
+		C98BE4251A9F6A2C001D0638 /* book.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = book.cpp; sourceTree = "<group>"; };
+		C98BE4261A9F6A2C001D0638 /* utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utils.cpp; sourceTree = "<group>"; };
+		C98BE42B1A9F706F001D0638 /* soci_session_factory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = soci_session_factory.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9628CE51A8A057F00282337 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A3109A8F1AAF372A0007C95E /* commands_tests */ = {
+			isa = PBXGroup;
+			children = (
+				A3109A901AAF372A0007C95E /* import_new_books.cpp */,
+			);
+			name = commands_tests;
+			path = ../../commands_tests;
+			sourceTree = "<group>";
+		};
+		A39CE46D1A9F4D9100E9A9BA /* soci */ = {
+			isa = PBXGroup;
+			children = (
+				A39CE4841A9F4E6400E9A9BA /* core */,
+				A39CE46E1A9F4DFC00E9A9BA /* backends */,
+			);
+			name = soci;
+			sourceTree = "<group>";
+		};
+		A39CE46E1A9F4DFC00E9A9BA /* backends */ = {
+			isa = PBXGroup;
+			children = (
+				A39CE46F1A9F4E0700E9A9BA /* sqlite3 */,
+			);
+			name = backends;
+			sourceTree = "<group>";
+		};
+		A39CE46F1A9F4E0700E9A9BA /* sqlite3 */ = {
+			isa = PBXGroup;
+			children = (
+				A3E72FC31AF7795100F69A2C /* blob.cpp */,
+				A3E72FC41AF7795100F69A2C /* common.cpp */,
+				A3E72FC51AF7795100F69A2C /* factory.cpp */,
+				A3E72FC61AF7795100F69A2C /* row-id.cpp */,
+				A3E72FC71AF7795100F69A2C /* session.cpp */,
+				A3E72FC81AF7795100F69A2C /* standard-into-type.cpp */,
+				A3E72FC91AF7795100F69A2C /* standard-use-type.cpp */,
+				A3E72FCA1AF7795100F69A2C /* statement.cpp */,
+				A3E72FCB1AF7795100F69A2C /* vector-into-type.cpp */,
+				A3E72FCC1AF7795100F69A2C /* vector-use-type.cpp */,
+			);
+			name = sqlite3;
+			sourceTree = "<group>";
+		};
+		A39CE4841A9F4E6400E9A9BA /* core */ = {
+			isa = PBXGroup;
+			children = (
+				A3E72F9D1AF7793A00F69A2C /* backend-loader.cpp */,
+				A3E72F9E1AF7793A00F69A2C /* blob.cpp */,
+				A3E72F9F1AF7793A00F69A2C /* connection-parameters.cpp */,
+				A3E72FA01AF7793A00F69A2C /* connection-pool.cpp */,
+				A3E72FA11AF7793A00F69A2C /* error.cpp */,
+				A3E72FA21AF7793A00F69A2C /* into-type.cpp */,
+				A3E72FA31AF7793A00F69A2C /* once-temp-type.cpp */,
+				A3E72FA41AF7793A00F69A2C /* prepare-temp-type.cpp */,
+				A3E72FA51AF7793A00F69A2C /* procedure.cpp */,
+				A3E72FA61AF7793A00F69A2C /* ref-counted-prepare-info.cpp */,
+				A3E72FA71AF7793A00F69A2C /* ref-counted-statement.cpp */,
+				A3E72FA81AF7793A00F69A2C /* row.cpp */,
+				A3E72FA91AF7793A00F69A2C /* rowid.cpp */,
+				A3E72FAA1AF7793A00F69A2C /* session.cpp */,
+				A3E72FAB1AF7793A00F69A2C /* soci-simple.cpp */,
+				A3E72FAC1AF7793A00F69A2C /* statement.cpp */,
+				A3E72FAD1AF7793A00F69A2C /* transaction.cpp */,
+				A3E72FAE1AF7793A00F69A2C /* use-type.cpp */,
+				A3E72FAF1AF7793A00F69A2C /* values.cpp */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
+		A39CE4B01A9F57F600E9A9BA /* sqlite-amalgamation-3080803 */ = {
+			isa = PBXGroup;
+			children = (
+				A39CE4B21A9F57F600E9A9BA /* sqlite3.c */,
+				A39CE4B31A9F57F600E9A9BA /* sqlite3.h */,
+				A39CE4B41A9F57F600E9A9BA /* sqlite3ext.h */,
+			);
+			name = "sqlite-amalgamation-3080803";
+			path = "../../../../../third_parties/sqlite-amalgamation-3080803";
+			sourceTree = "<group>";
+		};
+		A39CE4B71AA0525400E9A9BA /* bl */ = {
+			isa = PBXGroup;
+			children = (
+				C905F1A91AA70157007EF2FD /* book_shelf.hpp */,
+				C905F1A81AA70146007EF2FD /* book_attributes.hpp */,
+				A39CE4B81AA0525400E9A9BA /* book.hpp */,
+				A39CE4B91AA0525400E9A9BA /* db_id.hpp */,
+			);
+			name = bl;
+			path = ../../../src/bl;
+			sourceTree = "<group>";
+		};
+		A39CE4BB1AA0525400E9A9BA /* commands */ = {
+			isa = PBXGroup;
+			children = (
+				A3C802F91AAF32FF001222A9 /* import_new_books.cpp */,
+				A3C802FA1AAF32FF001222A9 /* import_new_books.hpp */,
+				A39CE4BC1AA0525400E9A9BA /* processor.hpp */,
+			);
+			name = commands;
+			path = ../../../src/commands;
+			sourceTree = "<group>";
+		};
+		A39CE4BD1AA0525400E9A9BA /* dal */ = {
+			isa = PBXGroup;
+			children = (
+				A3109A921AAF400F0007C95E /* book_cover_attribute.hpp */,
+				C905F1AA1AA7026B007EF2FD /* book_shelf.hpp */,
+				A39CE4CC1AA07AC900E9A9BA /* book_attributes.hpp */,
+				A39CE4BE1AA0525400E9A9BA /* base.cpp */,
+				A39CE4BF1AA0525400E9A9BA /* base.hpp */,
+				A39CE4C01AA0525400E9A9BA /* book.hpp */,
+				A39CE4C11AA0525400E9A9BA /* id.hpp */,
+			);
+			name = dal;
+			path = ../../../src/dal;
+			sourceTree = "<group>";
+		};
+		A39CE4C31AA0525400E9A9BA /* details */ = {
+			isa = PBXGroup;
+			children = (
+				A39CE4C41AA0525400E9A9BA /* utils.cpp */,
+				A39CE4C51AA0525400E9A9BA /* utils.hpp */,
+			);
+			name = details;
+			path = ../../../src/details;
+			sourceTree = "<group>";
+		};
+		A39CE4C81AA06C0600E9A9BA /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				A3DA01611AA7617100F2F354 /* drop_tables.txt */,
+				A39CE4C91AA06C0600E9A9BA /* sql_tables.txt */,
+				A39CE4CA1AA06C0600E9A9BA /* UBReader_iOS_Version_1_spec.rtf */,
+			);
+			name = doc;
+			path = ../../../doc;
+			sourceTree = "<group>";
+		};
+		C9628CDF1A8A057F00282337 = {
+			isa = PBXGroup;
+			children = (
+				A39CE4C81AA06C0600E9A9BA /* doc */,
+				C98BE42A1A9F6A64001D0638 /* tests */,
+				C98BE4291A9F6A3B001D0638 /* src */,
+				A39CE4661A9F4B1B00E9A9BA /* gtest-all.cc */,
+				C98BE42B1A9F706F001D0638 /* soci_session_factory.cpp */,
+				A39CE4641A9F4B1500E9A9BA /* gtest_main.cc */,
+				C9628CE91A8A057F00282337 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9628CE91A8A057F00282337 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9628CE81A8A057F00282337 /* tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C98BE4161A9F68AC001D0638 /* boost_cpp */ = {
+			isa = PBXGroup;
+			children = (
+				C98BE4171A9F68DE001D0638 /* gregorian */,
+				C98BE41D1A9F68DE001D0638 /* posix_time */,
+			);
+			name = boost_cpp;
+			sourceTree = "<group>";
+		};
+		C98BE4171A9F68DE001D0638 /* gregorian */ = {
+			isa = PBXGroup;
+			children = (
+				C98BE4181A9F68DE001D0638 /* date_generators.cpp */,
+				C98BE4191A9F68DE001D0638 /* greg_month.cpp */,
+				C98BE41A1A9F68DE001D0638 /* greg_names.hpp */,
+				C98BE41B1A9F68DE001D0638 /* greg_weekday.cpp */,
+				C98BE41C1A9F68DE001D0638 /* gregorian_types.cpp */,
+			);
+			name = gregorian;
+			path = ../../../../../third_parties/boost_1_55_0/libs/date_time/src/gregorian;
+			sourceTree = "<group>";
+		};
+		C98BE41D1A9F68DE001D0638 /* posix_time */ = {
+			isa = PBXGroup;
+			children = (
+				C98BE41E1A9F68DE001D0638 /* posix_time_types.cpp */,
+			);
+			name = posix_time;
+			path = ../../../../../third_parties/boost_1_55_0/libs/date_time/src/posix_time;
+			sourceTree = "<group>";
+		};
+		C98BE4241A9F6A2C001D0638 /* dal_tests */ = {
+			isa = PBXGroup;
+			children = (
+				A3E72FD71AF77CAC00F69A2C /* book_on_shelf.cpp */,
+				A315E0F11AEA747D005424E7 /* exclusive_db_connection_for_writing.cpp */,
+				A3DA015F1AA7517A00F2F354 /* database_management.cpp */,
+				C905F1AE1AA72AAA007EF2FD /* book_list.cpp */,
+				C905F1AB1AA704ED007EF2FD /* book_shelf.cpp */,
+				A39CE4CD1AA0919300E9A9BA /* book_attributes.cpp */,
+				C98BE4251A9F6A2C001D0638 /* book.cpp */,
+				C98BE4261A9F6A2C001D0638 /* utils.cpp */,
+			);
+			name = dal_tests;
+			path = ../../dal_tests;
+			sourceTree = "<group>";
+		};
+		C98BE4291A9F6A3B001D0638 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A39CE4B71AA0525400E9A9BA /* bl */,
+				A39CE4BB1AA0525400E9A9BA /* commands */,
+				A39CE4BD1AA0525400E9A9BA /* dal */,
+				A39CE4C31AA0525400E9A9BA /* details */,
+				C98BE4161A9F68AC001D0638 /* boost_cpp */,
+				A39CE4B01A9F57F600E9A9BA /* sqlite-amalgamation-3080803 */,
+				A39CE46D1A9F4D9100E9A9BA /* soci */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		C98BE42A1A9F6A64001D0638 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				A3109A8F1AAF372A0007C95E /* commands_tests */,
+				C98BE4241A9F6A2C001D0638 /* dal_tests */,
+			);
+			name = tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9628CE71A8A057F00282337 /* tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9628CEF1A8A057F00282337 /* Build configuration list for PBXNativeTarget "tests" */;
+			buildPhases = (
+				C9628CE41A8A057F00282337 /* Sources */,
+				C9628CE51A8A057F00282337 /* Frameworks */,
+				C9628CE61A8A057F00282337 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tests;
+			productName = tests;
+			productReference = C9628CE81A8A057F00282337 /* tests */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9628CE01A8A057F00282337 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Yanko;
+				TargetAttributes = {
+					C9628CE71A8A057F00282337 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = C9628CE31A8A057F00282337 /* Build configuration list for PBXProject "tests" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C9628CDF1A8A057F00282337;
+			productRefGroup = C9628CE91A8A057F00282337 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9628CE71A8A057F00282337 /* tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9628CE41A8A057F00282337 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C98BE42C1A9F706F001D0638 /* soci_session_factory.cpp in Sources */,
+				C98BE4231A9F68DE001D0638 /* posix_time_types.cpp in Sources */,
+				A3E72FB71AF7793A00F69A2C /* prepare-temp-type.cpp in Sources */,
+				A3E72FD21AF7795100F69A2C /* standard-into-type.cpp in Sources */,
+				C98BE41F1A9F68DE001D0638 /* date_generators.cpp in Sources */,
+				A3E72FBB1AF7793A00F69A2C /* row.cpp in Sources */,
+				A315E0F21AEA747D005424E7 /* exclusive_db_connection_for_writing.cpp in Sources */,
+				C98BE4271A9F6A2C001D0638 /* book.cpp in Sources */,
+				A3109A911AAF372A0007C95E /* import_new_books.cpp in Sources */,
+				A3E72FCD1AF7795100F69A2C /* blob.cpp in Sources */,
+				C905F1AF1AA72AAA007EF2FD /* book_list.cpp in Sources */,
+				A3E72FB51AF7793A00F69A2C /* into-type.cpp in Sources */,
+				A3E72FB11AF7793A00F69A2C /* blob.cpp in Sources */,
+				C98BE4211A9F68DE001D0638 /* greg_weekday.cpp in Sources */,
+				C98BE4221A9F68DE001D0638 /* gregorian_types.cpp in Sources */,
+				A3E72FB91AF7793A00F69A2C /* ref-counted-prepare-info.cpp in Sources */,
+				C98BE4281A9F6A2C001D0638 /* utils.cpp in Sources */,
+				A3E72FBD1AF7793A00F69A2C /* session.cpp in Sources */,
+				A3E72FB81AF7793A00F69A2C /* procedure.cpp in Sources */,
+				A3E72FC21AF7793A00F69A2C /* values.cpp in Sources */,
+				C98BE4201A9F68DE001D0638 /* greg_month.cpp in Sources */,
+				A3E72FC01AF7793A00F69A2C /* transaction.cpp in Sources */,
+				A3E72FBF1AF7793A00F69A2C /* statement.cpp in Sources */,
+				A3E72FBC1AF7793A00F69A2C /* rowid.cpp in Sources */,
+				A3E72FD31AF7795100F69A2C /* standard-use-type.cpp in Sources */,
+				A3E72FD61AF7795100F69A2C /* vector-use-type.cpp in Sources */,
+				A3E72FB31AF7793A00F69A2C /* connection-pool.cpp in Sources */,
+				A3E72FCE1AF7795100F69A2C /* common.cpp in Sources */,
+				A3E72FD01AF7795100F69A2C /* row-id.cpp in Sources */,
+				A39CE4651A9F4B1500E9A9BA /* gtest_main.cc in Sources */,
+				A39CE4671A9F4B1B00E9A9BA /* gtest-all.cc in Sources */,
+				A3E72FD51AF7795100F69A2C /* vector-into-type.cpp in Sources */,
+				A3E72FB01AF7793A00F69A2C /* backend-loader.cpp in Sources */,
+				A3E72FD41AF7795100F69A2C /* statement.cpp in Sources */,
+				A39CE4C61AA0525400E9A9BA /* base.cpp in Sources */,
+				A3E72FBE1AF7793A00F69A2C /* soci-simple.cpp in Sources */,
+				A3DA01601AA7517A00F2F354 /* database_management.cpp in Sources */,
+				A3E72FB41AF7793A00F69A2C /* error.cpp in Sources */,
+				A3E72FD81AF77CAC00F69A2C /* book_on_shelf.cpp in Sources */,
+				A3E72FB21AF7793A00F69A2C /* connection-parameters.cpp in Sources */,
+				A39CE4C71AA0525400E9A9BA /* utils.cpp in Sources */,
+				A3C802FB1AAF32FF001222A9 /* import_new_books.cpp in Sources */,
+				A3E72FBA1AF7793A00F69A2C /* ref-counted-statement.cpp in Sources */,
+				A3E72FB61AF7793A00F69A2C /* once-temp-type.cpp in Sources */,
+				A3E72FC11AF7793A00F69A2C /* use-type.cpp in Sources */,
+				C905F1AC1AA704ED007EF2FD /* book_shelf.cpp in Sources */,
+				A3E72FD11AF7795100F69A2C /* session.cpp in Sources */,
+				A39CE4CE1AA0919300E9A9BA /* book_attributes.cpp in Sources */,
+				A3E72FCF1AF7795100F69A2C /* factory.cpp in Sources */,
+				A39CE4B61A9F57F600E9A9BA /* sqlite3.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C9628CED1A8A057F00282337 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../../../../boost_1_55_0/,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OBJROOT = "";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "./ ../../../../../boost_1_55_0/";
+			};
+			name = Debug;
+		};
+		C9628CEE1A8A057F00282337 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../../../../boost_1_55_0/,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OBJROOT = "";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "./ ../../../../../boost_1_55_0/";
+			};
+			name = Release;
+		};
+		C9628CF01A8A057F00282337 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CONFIGURATION_TEMP_DIR = "./build/$(EFFECTIVE_PLATFORM_NAME)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../,
+					"../../../../../third_parties/gtest-1.7.0/include/**",
+					"../../../../../third_parties/gtest-1.7.0/",
+					"../../../../../third_parties/sqlite-amalgamation-3080803/",
+					"../../../third_parties/soci-3.2.2/core/",
+					"../../../third_parties/soci-3.2.2/backends/sqlite3/",
+					../../../,
+					../../../../../third_parties/boost_1_55_0,
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OBJROOT = ./build;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "./ ../../../../../boost_1_55_0/";
+			};
+			name = Debug;
+		};
+		C9628CF11A8A057F00282337 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CONFIGURATION_TEMP_DIR = "./build/$(EFFECTIVE_PLATFORM_NAME)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../,
+					"../../../../../third_parties/gtest-1.7.0/include/**",
+					"../../../../../third_parties/gtest-1.7.0/",
+					"../../../../../third_parties/sqlite-amalgamation-3080803/",
+					"../../../third_parties/soci-3.2.2/core/",
+					"../../../third_parties/soci-3.2.2/backends/sqlite3/",
+					../../../,
+					../../../../../third_parties/boost_1_55_0,
+				);
+				OBJROOT = ./build;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "./ ../../../../../boost_1_55_0/";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9628CE31A8A057F00282337 /* Build configuration list for PBXProject "tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9628CED1A8A057F00282337 /* Debug */,
+				C9628CEE1A8A057F00282337 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9628CEF1A8A057F00282337 /* Build configuration list for PBXNativeTarget "tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9628CF01A8A057F00282337 /* Debug */,
+				C9628CF11A8A057F00282337 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9628CE01A8A057F00282337 /* Project object */;
+}

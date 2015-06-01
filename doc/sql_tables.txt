@@ -1,0 +1,36 @@
+CREATE TABLE  IF NOT EXISTS 'books' (id CHAR(36) PRIMARY KEY  NOT NULL  DEFAULT 0 ,
+				title VARCHAR(50) NOT NULL  DEFAULT 'default' ,
+				authors VARCHAR(50) NOT NULL  DEFAULT 'default' ,
+				isbn VARCHAR(50) NOT NULL  DEFAULT 'default' ,
+                cover_mime_type VARCHAR(250) NOT NULL  DEFAULT 'default' ,
+                file_name VARCHAR(250) NOT NULL  DEFAULT 'default' ,
+                mime_type VARCHAR(50) NOT NULL  DEFAULT 'default' ,
+                book_instance CHAR(36) NOT NULL  DEFAULT 0 ,
+                book_cover CHAR(36) NOT NULL  DEFAULT 0 ,
+                book_shelf CHAR(36) NOT NULL  DEFAULT 0 ,
+                last_read DATETIME,
+                install_time DATETIME,
+				reading_begin DATETIME,
+				reading_end DATETIME);
+
+CREATE TABLE IF NOT EXISTS'book_shelves' (id CHAR(36) PRIMARY KEY  NOT NULL  DEFAULT 0 ,
+parent CHAR(36) NOT NULL DEFAULT 0,
+name VARCHAR(50) NOT NULL DEFAULT 'default' ,
+sort_order INTEGER NOT NULL DEFAULT 0);
+
+CREATE TABLE IF NOT EXISTS 'instances' (
+     book_id CHAR(36) PRIMARY KEY  NOT NULL  DEFAULT 0,
+     raw_data blob);
+
+CREATE TABLE IF NOT EXISTS 'covers' (
+book_id CHAR(36) PRIMARY KEY  NOT NULL  DEFAULT 0,
+raw_data blob);
+
+CREATE TABLE IF NOT EXISTS 'covers_cache' (
+book_id CHAR(36) PRIMARY KEY  NOT NULL  DEFAULT 0,
+raw_data blob);
+
+CREATE TABLE IF NOT EXISTS 'book_on_shelf' (
+book_id CHAR(36) NOT NULL  DEFAULT 0,
+shelf_id CHAR(36) NOT NULL  DEFAULT 0,
+unique (book_id, shelf_id));

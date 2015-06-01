@@ -1,0 +1,66 @@
+body {
+    margin:0;
+    padding:0;
+}
+
+h2 {
+    font-size: 25px;
+    padding-top: 5px;
+    color:#646485;
+}
+h3 {
+    font-size: 20px;
+    padding-top: 5px;
+    color:#126491;
+}
+table td tr {
+    border-spacing: 0;
+    border-collapse: collapse;
+    padding:0;
+}
+
+#list_container {
+    width:100%;
+}
+
+#list_container table {
+    width:100%;
+    overflow:hidden;
+}
+#shelf_table {
+    width:100%;
+}
+
+
+
+
+
+.book-info-shelf {
+    display:none;
+    text-align:left;
+}
+
+.book-info-list {
+    display:block;
+}
+
+.book-title {
+    margin:0;
+    height:1em;
+    overflow:hidden;
+}
+
+.book-title-ref {
+    color:black;
+    font-size:1em;
+}
+
+.book-authors {
+    color:grey;
+    margin:0;
+    font-size:90%;
+}
+
+.book-element-shelf .book-element-cover-row{
+    text-align:center;
+}

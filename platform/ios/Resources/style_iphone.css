@@ -1,0 +1,53 @@
+#shelf_left_row {
+    width:10px;
+    background:url(shelf_background_left_iphone.png);
+}
+
+#shelf_right_row {
+    width:10px;
+    background:url(shelf_background_right_iphone.png);
+}
+
+#shelf_top {
+    width:100%;
+    height:15px;
+    background:url(shelf_background_top.png);
+}
+
+#books {
+    width:100%;
+    background:url(shelf_background_iphone.png);
+}
+
+.book-element-shelf{
+    padding:0;
+    display:inline-block;
+    text-align:center;
+    margin:0;
+    height:140px;
+    border-bottom:0;
+}
+
+.book-cover-shelf{
+    display:inline-block;
+    height:110px;
+    margin-top:15px;
+}
+
+.book-element-list {
+    width:100%;
+    display:block;
+    height:120px;
+    border-bottom:0.5px grey solid;
+}
+
+.book-cover-list{
+    height:110px;
+    margin-top:0;
+}
+
+.book-element-list .book-element-cover-row {
+    width:100px;
+    text-align:right;
+    padding-right:5px;
+}

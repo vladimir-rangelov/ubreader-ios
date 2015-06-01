@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C025BD7A-C4A1-4552-8D44-82DC0696917D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>tests</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E651BF14E193FF8983455FA72545FE59A3D83F8E</key>
+		<string>svn.vpn.mobile-systemsbg.com:ubreader_ios</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Tests/platform/mac/tests.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E651BF14E193FF8983455FA72545FE59A3D83F8E</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>svn.vpn.mobile-systemsbg.com:ubreader_ios</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E651BF14E193FF8983455FA72545FE59A3D83F8E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E651BF14E193FF8983455FA72545FE59A3D83F8E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ubreader_ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,3 @@
+[submodule "platform/ios/Resources/readium-shared-js"]
+	path = platform/ios/Resources/readium-shared-js
+	url = https://github.com/readium/readium-shared-js.git

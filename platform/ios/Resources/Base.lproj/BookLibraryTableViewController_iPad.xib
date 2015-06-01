@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VirtualLibraryTableViewController">
+            <connections>
+                <outlet property="searchBar" destination="ocB-wk-Bml" id="LgZ-8B-voe"/>
+                <outlet property="searchDisplayController" destination="moM-mf-fH6" id="VoA-ag-2Gy"/>
+                <outlet property="shelves_button" destination="naB-at-zAF" id="JO9-zI-NkP"/>
+                <outlet property="switch_view" destination="xeu-sO-0VX" id="D8l-57-1MW"/>
+                <outlet property="table_" destination="c2J-bs-rjx" id="SD9-CD-OkN"/>
+                <outlet property="view" destination="2" id="wsS-vt-Afa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="c2J-bs-rjx">
+                    <rect key="frame" x="0.0" y="44" width="768" height="872"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="wQ1-mb-PfG"/>
+                        <outlet property="delegate" destination="-1" id="FpX-ua-87H"/>
+                    </connections>
+                </tableView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ex6-CY-yrN">
+                    <rect key="frame" x="0.0" y="916" width="768" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="9aD-LS-qMv"/>
+                        <barButtonItem title="Shelves" style="done" id="naB-at-zAF">
+                            <connections>
+                                <action selector="onAdd:event:" destination="-1" id="pj2-mJ-4AU"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="rWQ-qm-12n"/>
+                        <barButtonItem image="import_books.png" id="DwW-ST-Gw6">
+                            <connections>
+                                <action selector="onImport:" destination="-1" id="iRc-M9-DMy"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="uol-F0-aMK"/>
+                        <barButtonItem image="toggle_view_list.png" id="xeu-sO-0VX" userLabel="switch_view">
+                            <connections>
+                                <action selector="onChangeView:" destination="-1" id="BpX-by-OGM"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="BLv-RB-kLK"/>
+                        <barButtonItem image="sort_by.png" id="9qv-ew-BOi">
+                            <connections>
+                                <action selector="onSortBy:event:" destination="-1" id="tzH-xv-1oy"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="9Pe-Ry-nWW"/>
+                    </items>
+                </toolbar>
+                <searchBar contentMode="redraw" id="ocB-wk-Bml">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="7ta-NE-YIM"/>
+                    </connections>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <point key="canvasLocation" x="166" y="492"/>
+        </view>
+        <searchDisplayController id="moM-mf-fH6">
+            <connections>
+                <outlet property="delegate" destination="-1" id="zXf-u7-vGD"/>
+                <outlet property="searchContentsController" destination="-1" id="vLO-cJ-b4w"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="4ai-Ww-srf"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="gcU-76-2fW"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+    <resources>
+        <image name="import_books.png" width="48" height="48"/>
+        <image name="sort_by.png" width="48" height="48"/>
+        <image name="toggle_view_list.png" width="48" height="48"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

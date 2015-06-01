@@ -1,0 +1,7 @@
+drop table books;
+drop table book_shelves;
+drop table instances;
+drop table covers;
+drop covers_cache;
+drop book_on_shelf;
+

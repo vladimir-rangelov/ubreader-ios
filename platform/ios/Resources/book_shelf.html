@@ -1,0 +1,32 @@
+<html >
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script src="jquery.js"></script>
+        <script src="jquery.lazyload.js"> </script>
+        <script src="{{DEVICE_TYPE}}_specific.js"> </script>
+        <script src="local_scripts.js"> </script>
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <link href="style_{{DEVICE_TYPE}}.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="shelf_top" >
+        </div>
+        <table  id="shelf_table" cellspacing="0" cellpadding="0">
+            <tr>
+                <td id="shelf_left_row" >
+                </td>
+                <td  id="shelf_container">
+                  <div id="books">
+                    {{BOOK_LIST}}
+                  </div>
+                </td>
+                <td  id="shelf_right_row" >
+                </td>
+            </tr>
+        </table>
+        <div id="list_container">
+        </div>
+
+
+    </body>
+</html>
