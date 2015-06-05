@@ -99,13 +99,13 @@
 		A3551FED1B217C47000E86B2 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A3551FC61B217C47000E86B2 /* DispatchQueueLogFormatter.m */; };
 		A3551FEE1B217C47000E86B2 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = A3551FC71B217C47000E86B2 /* README.txt */; };
 		A3551FEF1B217F1D000E86B2 /* libePub3-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A31F04FE1B21787B00798AF4 /* libePub3-iOS.a */; };
+		A3551FF51B218FCA000E86B2 /* mathjax in Resources */ = {isa = PBXBuildFile; fileRef = A3551FF41B218FCA000E86B2 /* mathjax */; };
 		A37DB92A1ABB02D700E8BBBC /* annotations.css in Resources */ = {isa = PBXBuildFile; fileRef = A37DB8DB1ABB02D700E8BBBC /* annotations.css */; };
 		A37DB92D1ABB02D700E8BBBC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A37DB8E01ABB02D700E8BBBC /* LaunchScreen.xib */; };
 		A37DB9301ABB02D700E8BBBC /* epubReadingSystem.js in Resources */ = {isa = PBXBuildFile; fileRef = A37DB8E41ABB02D700E8BBBC /* epubReadingSystem.js */; };
 		A37DB9311ABB02D700E8BBBC /* host_app_feedback.js in Resources */ = {isa = PBXBuildFile; fileRef = A37DB8E51ABB02D700E8BBBC /* host_app_feedback.js */; };
 		A37DB9321ABB02D700E8BBBC /* jquery.js in Resources */ = {isa = PBXBuildFile; fileRef = A37DB8E61ABB02D700E8BBBC /* jquery.js */; };
 		A37DB9331ABB02D700E8BBBC /* local_scripts.js in Resources */ = {isa = PBXBuildFile; fileRef = A37DB8E71ABB02D700E8BBBC /* local_scripts.js */; };
-		A37DB9341ABB02D700E8BBBC /* MathJax.js in Resources */ = {isa = PBXBuildFile; fileRef = A37DB8E91ABB02D700E8BBBC /* MathJax.js */; };
 		A37DB9351ABB02D700E8BBBC /* no_cover.png in Resources */ = {isa = PBXBuildFile; fileRef = A37DB8EA1ABB02D700E8BBBC /* no_cover.png */; };
 		A37DB9361ABB02D700E8BBBC /* reader.css in Resources */ = {isa = PBXBuildFile; fileRef = A37DB8EB1ABB02D700E8BBBC /* reader.css */; };
 		A37DB9371ABB02D700E8BBBC /* reader.html in Resources */ = {isa = PBXBuildFile; fileRef = A37DB8EC1ABB02D700E8BBBC /* reader.html */; };
@@ -338,13 +338,13 @@
 		A3551FC51B217C47000E86B2 /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
 		A3551FC61B217C47000E86B2 /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
 		A3551FC71B217C47000E86B2 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		A3551FF41B218FCA000E86B2 /* mathjax */ = {isa = PBXFileReference; lastKnownFileType = folder; path = mathjax; sourceTree = "<group>"; };
 		A37DB8DB1ABB02D700E8BBBC /* annotations.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = annotations.css; sourceTree = "<group>"; };
 		A37DB8E11ABB02D700E8BBBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A37DB8E41ABB02D700E8BBBC /* epubReadingSystem.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = epubReadingSystem.js; sourceTree = "<group>"; };
 		A37DB8E51ABB02D700E8BBBC /* host_app_feedback.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = host_app_feedback.js; sourceTree = "<group>"; };
 		A37DB8E61ABB02D700E8BBBC /* jquery.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.js; sourceTree = "<group>"; };
 		A37DB8E71ABB02D700E8BBBC /* local_scripts.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = local_scripts.js; sourceTree = "<group>"; };
-		A37DB8E91ABB02D700E8BBBC /* MathJax.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = MathJax.js; sourceTree = "<group>"; };
 		A37DB8EA1ABB02D700E8BBBC /* no_cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = no_cover.png; sourceTree = "<group>"; };
 		A37DB8EB1ABB02D700E8BBBC /* reader.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = reader.css; sourceTree = "<group>"; };
 		A37DB8EC1ABB02D700E8BBBC /* reader.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = reader.html; sourceTree = "<group>"; };
@@ -813,6 +813,7 @@
 				C9ECD7351AC155BF001D87F7 /* iphone_specific.js */,
 				C9ECD7331AC15562001D87F7 /* ipad_specific.js */,
 				C9ECD72D1AC14E0C001D87F7 /* style_ipad.css */,
+				A3551FF41B218FCA000E86B2 /* mathjax */,
 				C9ECD72E1AC14E0C001D87F7 /* style_iphone.css */,
 				C9ECD7251ABC2783001D87F7 /* book_shelf.html */,
 				C9ECD7211ABC1FE5001D87F7 /* book_shelf_item.html */,
@@ -827,7 +828,6 @@
 				A37DB8E51ABB02D700E8BBBC /* host_app_feedback.js */,
 				A37DB8E61ABB02D700E8BBBC /* jquery.js */,
 				A37DB8E71ABB02D700E8BBBC /* local_scripts.js */,
-				A37DB8E81ABB02D700E8BBBC /* mathjax */,
 				A37DB8EA1ABB02D700E8BBBC /* no_cover.png */,
 				A3E72FF61AFBA24E00F69A2C /* reveal-icon.png */,
 				A3E72FF71AFBA24E00F69A2C /* reveal-icon@2x.png */,
@@ -836,14 +836,6 @@
 				A37DB9291ABB02D700E8BBBC /* style.css */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		A37DB8E81ABB02D700E8BBBC /* mathjax */ = {
-			isa = PBXGroup;
-			children = (
-				A37DB8E91ABB02D700E8BBBC /* MathJax.js */,
-			);
-			path = mathjax;
 			sourceTree = "<group>";
 		};
 		A37DB96D1ABB093B00E8BBBC /* en.lproj */ = {
@@ -1159,7 +1151,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A37DB9341ABB02D700E8BBBC /* MathJax.js in Resources */,
 				A37DB9351ABB02D700E8BBBC /* no_cover.png in Resources */,
 				A3551FE61B217C47000E86B2 /* About.txt in Resources */,
 				A3E72FE31AF8BDFF00F69A2C /* side_bar_button.png in Resources */,
@@ -1182,6 +1173,7 @@
 				A315E0ED1AE8D9B1005424E7 /* sort_time_open.png in Resources */,
 				A315E0D31AE78396005424E7 /* toggle_view_list.png in Resources */,
 				A37DB9701ABB093B00E8BBBC /* Localizable.strings in Resources */,
+				A3551FF51B218FCA000E86B2 /* mathjax in Resources */,
 				A3E72FFE1AFCDA6900F69A2C /* selection.png in Resources */,
 				C9ECD7361AC155BF001D87F7 /* iphone_specific.js in Resources */,
 				C9ECD7341AC15562001D87F7 /* ipad_specific.js in Resources */,
