@@ -1,3 +1,6 @@
 [submodule "platform/ios/Resources/readium-shared-js"]
 	path = platform/ios/Resources/readium-shared-js
 	url = https://github.com/readium/readium-shared-js.git
+[submodule "third_parties/readium-sdk"]
+	path = third_parties/readium-sdk
+	url = https://github.com/readium/readium-sdk.git

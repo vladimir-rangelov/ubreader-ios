@@ -4,8 +4,8 @@
 #include "src/dal/book.hpp"
 #include "src/dal/id.hpp"
 #include "src/dal/book_cover_attribute.hpp"
-#include <google/template.h>
-#include <google/template_from_string.h>
+//#include <google/template.h>
+//#include <google/template_from_string.h>
 
 #define COVER_URL "cover.png?book="
 #define BOOK_URL "open_book.html?book="
@@ -49,6 +49,7 @@ int get_screen_width(){
 }
 
 //std::mutex m;
+/*
 std::string book_list_to_html(std::list<bl::Book> list,
                               bool shelfViewType){
     
@@ -97,7 +98,7 @@ std::string book_list_to_html(std::list<bl::Book> list,
     page_tpl->Expand(&result, &dict);
     return result;
 }
-
+*/
 
 @implementation BookResourceDataResponse
 
@@ -107,14 +108,14 @@ std::string book_list_to_html(std::list<bl::Book> list,
     dal::BookCoverAttribute book_cover_att(sql);
     dal::Book b(sql);
     NSData * local_data;
-
+/*
     auto print_book_list = [&b, &local_data, shelfViewType]() {
         std::list<bl::Book> b_list =b.base_functions_.rows();
         std::string html = book_list_to_html(b_list, shelfViewType);
         NSString * FALLBACK_HTML = [[NSString alloc] initWithUTF8String:html.c_str()];
         local_data = [FALLBACK_HTML dataUsingEncoding:NSUTF8StringEncoding];
     };
-    
+  */
     if (uri_str.find(COVER_URL) != std::string::npos) {
         std::size_t cover_url_pref_lenght = sizeof(COVER_URL);
         std::string book_id(&uri_str[cover_url_pref_lenght],
@@ -144,7 +145,7 @@ std::string book_list_to_html(std::list<bl::Book> list,
         //self.contentType = @"text/javascript";
     }
     else {
-        print_book_list();
+     //   print_book_list();
         self.contentType = @"text/html";
     }
     

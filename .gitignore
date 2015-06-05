@@ -26,3 +26,4 @@ DB_files/
 cover_images/
 platform/ios/ubreader.xcodeproj/project.xcworkspace/
 platform/ios/ubreader.xcodeproj/xcuserdata/
+third_parties/boost_1_57_0/
